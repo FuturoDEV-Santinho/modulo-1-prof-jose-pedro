@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+
+  <style>
+    body *{
+      border: 1pt solid black;
+    }
+    article{
+      height: 500px;
+    }
+    .row{
+      overflow: auto;
+    }
+    .col-7{
+      width: 60%;
+      float: left;
+    }
+    .col-5{
+      width: 39%;
+      float: left;
+    }
+    footer{
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Título da Página</h1>
+  </header>
+  <nav>
+    <a href="#a1">Artigo 1</a>
+    <a href="#a2">Artigo 2</a>
+    <a href="#a3">Artigo 3</a>
+  </nav>
+  <div class="row">
+    <div class="col-7">
+      <section>Sou uma seção</section>
+      <article id="a1">Artigo 1</article>
+      <article id="a2">Artigo 2</article>
+      <article id="a3">Artigo 3</article>
+    </div>
+    <div class="col-5">
+      <aside>Estou ao lado</aside>
+    </div>
+  </div>
+  <footer>Sou o rodapé</footer>
+  
+  
+</body>
+</html>
