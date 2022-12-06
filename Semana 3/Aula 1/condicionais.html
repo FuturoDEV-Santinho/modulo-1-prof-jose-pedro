@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicionais</title>
+
+  <script>
+
+    // If
+    var date = new Date();
+    var hour = date.getHours();
+    console.log(hour);
+
+    if(hour < 12){
+      document.writeln("<p>Bom dia!</p>");
+    } else if (12 > hour && hour < 18){
+      document.writeln("<p>Boa tarde!</p>");
+    }else{
+      document.writeln("<p>Boa noite!</p>");
+    }
+
+    // Operador Ternário
+    
+    var a = 'Ana';
+    var b = 'Julia';
+
+    var maior = (a.length > b.length) ? a : b;
+
+    console.log(maior);
+
+    // Switch
+
+    var data = new Date();
+    var dia = data.getDay();
+
+    switch(dia){
+      case 0:
+      case 6: 
+        console.log('Final de semana!'); 
+        break;
+      case 5: console.log('Sextou'); break;
+      default: console.log('Trabalho e estudo');
+    }
+
+    var numero = 10;
+
+    switch(true){
+      case (numero%2 == 0): console.log('par'); break;
+      default: console.log('ímpar'); 
+    }
+
+    
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

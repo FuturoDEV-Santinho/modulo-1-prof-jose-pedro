@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    var nota1 = 10;
+    var nota2 = 5;
+
+    var media = (nota1+nota2) / 2
+
+    switch(true){
+      case (media < 4):
+        document.writeln("Média: "+media+" Status: Reprovado");
+        break;
+      case (media >=4 && media < 7):
+        document.writeln("Média: "+media+" Status: Recuperação");
+        break;
+      default:
+        document.writeln("Média: "+media+" Status: Aprovado");
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
