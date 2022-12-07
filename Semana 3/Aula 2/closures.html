@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    var criaPet = function (nomeDoPet){
+      var pelagem;
+      return {
+        getName: function(){
+          return nomeDoPet;
+        },
+        setName: function(novoNome){
+          nomeDoPet = novoNome;
+        },
+        getPelagem: function(){
+          return pelagem;
+        },
+        setPelagem: function(novaPelagem){
+          pelagem = novaPelagem;
+        }
+      }
+    }
+
+    var nina = criaPet("Nina");
+    nina.setName("Márcia");
+    nina.setPelagem("Frajola");
+    console.log(nina.getName());
+    console.log(nina.getPelagem());
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    var mathModule = function (){
+      var pi = 3.14;
+
+      return {
+        circleArea: function(raio){
+          var area = pi * (raio * raio);
+          return area;
+        }
+      }
+    }
+
+    var math = mathModule();
+    console.log(math.circleArea(2));
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
